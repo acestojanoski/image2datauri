@@ -1,0 +1,52 @@
+{
+	"name": "image2datauri",
+	"version": "1.0.0",
+	"description": "Convert Image To Data URI",
+	"private": true,
+	"scripts": {
+		"dev": "next",
+		"start": "next start",
+		"build": "next build",
+		"test": "xo"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/acestojanoski/image2datauri.git"
+	},
+	"author": "Aleksandar Stojanoski",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/acestojanoski/image2datauri/issues"
+	},
+	"homepage": "https://image2datauri.vercel.app",
+	"dependencies": {
+		"allowed-methods": "^0.1.0",
+		"got": "^11.8.2",
+		"next": "^11.1.0",
+		"prop-types": "^15.7.2",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"eslint-config-xo-react": "^0.25.0",
+		"eslint-plugin-react": "^7.25.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"xo": "^0.44.0"
+	},
+	"xo": {
+		"prettier": true,
+		"extends": "xo-react",
+		"globals": [
+			"fetch",
+			"document",
+			"window",
+			"navigator",
+			"FileReader"
+		],
+		"rules": {
+			"node/file-extension-in-import": "off",
+			"import/extensions": "off",
+			"react/react-in-jsx-scope": "off"
+		}
+	}
+}
